@@ -42,3 +42,4 @@ jspm_packages
 xcuserdata/
 
 */node_modules/
+.idea

@@ -1,4 +1,5 @@
 var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry:path.join(__dirname,'index'),
     output:{
@@ -12,5 +13,12 @@ module.exports = {
                 loaders:['style','css']
             }
         ]
-    }
+    },
+    //插件
+    plugins:[
+        new HtmlWebpackPlugin({
+
+            title:'use plugin'
+        })
+    ]
 };
