@@ -46,7 +46,9 @@
 
 	var text = __webpack_require__(1);
 	console.log(text);
-
+	//无配置文件时写法
+	//require('style!css!./index.css');
+	//有配置文件写法
 	__webpack_require__(2);
 	document.body.appendChild(document.createElement('div'));
 
